@@ -26,7 +26,9 @@ function getNames(callBack){
   zooAnimals.forEach((data) => {
      return displayNames.push(`Name: ${data.animal_name} Scientific: ${data.scientific_name}`);
    });
- console.log(displayNames);	
+  console.log(displayNames);	
+}
+ 
  
 
 // /* Request 2: .map()
@@ -37,7 +39,7 @@ function getNames(callBack){
 
 const lowCaseAnimalNames = zooAnimals.map((data) => {
 	animal = (data.animal_name); 
-	return anima.toLowerCase();
+	return animal.toLowerCase();
 });
 
 console.log(lowCaseAnimalNames);	
@@ -90,7 +92,7 @@ function multiply(num1,num2){
 	return num1 * num2;
 }
 function greeting(firstName,lastName){
-	return `Hello ${firstName} ${lastName} , nice to meet you!`;
+	return `Hello ${firstName} ${lastName} , nice to meet you!`;}
 
 // /* Step 3: Check your work by un-commenting the following calls to consume(): */
 // // console.log(consume(2, 2, add)); // 4
@@ -100,8 +102,6 @@ function greeting(firstName,lastName){
 
 
 
-// /*
+
 
 // Stretch: If you haven't already, convert your array method callbacks into arrow functions.
-
-// */
